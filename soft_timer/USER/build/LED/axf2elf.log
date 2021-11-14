@@ -1,0 +1,6 @@
+objcopy.exe --update-section ER_IROM1="d:\My_interesting\Soft_Timer\USER\build\LED\USER.bin" "d:\My_interesting\Soft_Timer\USER\build\LED\USER.axf" "d:\My_interesting\Soft_Timer\USER\build\LED\USER.elf"
+
+objcopy.exe: d:\My_interesting\Soft_Timer\USER\build\LED\USER.elf: warning: allocated section `RW_IRAM1' not in segment
+
+WARNING: The runtime version supported by this application is unavailable.
+Using default runtime: v4.0.30319

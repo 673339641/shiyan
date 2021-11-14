@@ -1,0 +1,19 @@
+[2021-11-14 11:44:34]	compilation failed at : "d:\My_interesting\Soft_Timer\HARDWARE\SOFTTIMER\timer.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] doneList) [0x000e4] in <881485cd164b4f5a918f957d29d55652>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x011e7] in <881485cd164b4f5a918f957d29d55652>:0 
+
+[2021-11-14 11:49:54]	[done]
+	build successfully !
+
+[2021-11-14 11:55:43]	[done]
+	build successfully !
+
+[2021-11-14 11:57:21]	[done]
+	build successfully !
+
+[2021-11-14 11:58:26]	[done]
+	build successfully !
+
+[2021-11-14 12:00:19]	[done]
+	build successfully !
+
