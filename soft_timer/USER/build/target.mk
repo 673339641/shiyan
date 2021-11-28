@@ -20,7 +20,7 @@ INCLUDE_FOLDERS += ../SYSTEM/usart
 INCLUDE_FOLDERS += ../HALLIB/STM32F1xx_HAL_Driver/Inc
 INCLUDE_FOLDERS += ../HARDWARE/LED
 INCLUDE_FOLDERS += ../HARDWARE/SOFTTIMER
-INCLUDE_FOLDERS += .cmsis/include
+INCLUDE_FOLDERS += ../HARDWARE/KEY
 INCLUDE_FOLDERS += RTE/_LED
 INCLUDE_FOLDERS += .eide/deps
 
@@ -37,6 +37,7 @@ C_SOURCES += ../HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 C_SOURCES += ../HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 C_SOURCES += ../HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
 C_SOURCES += ../HALLIB/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_usart.c
+C_SOURCES += ../HARDWARE/KEY/key.c
 C_SOURCES += ../HARDWARE/LED/led.c
 C_SOURCES += ../HARDWARE/SOFTTIMER/timer.c
 C_SOURCES += ../SYSTEM/delay/delay.c

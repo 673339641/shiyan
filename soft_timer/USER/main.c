@@ -2,6 +2,7 @@
 #include "delay.h"
 #include "usart.h"
 #include "led.h"
+#include "Key.h"
 #include "timer.h"
 /************************************************
  ALIENTEK 战舰STM32F103开发板 实验1
@@ -17,19 +18,23 @@
 
 int main(void)
 {
-	  uint8_t  Flag = 0;
-    HAL_Init();                    	 	//初始化HAL库    
-    Stm32_Clock_Init(RCC_PLL_MUL9);   	//设置时钟,72M
-	delay_init(72);               		//初始化延时函数，设置systick频率
-	Soft_TimerInit();									//软件定时器初始化
-	LED_Init();							//初始化LED	
-	StartAutoTimer(0,1000);   //启动自动定时器0 
+	  uint8_t  KeyCode = 0;
+    
+      HAL_Init();                    	 	//初始化HAL库    
+      Stm32_Clock_Init(RCC_PLL_MUL9);   	//设置时钟,72M
+	  delay_init(72);               		//初始化延时函数，设置systick频率
+	  Soft_TimerInit();									//软件定时器初始化
+	  LED_Init();							//初始化LED	
+	  
 	  uart_init(115200);
+	  KeyInit();  	 //按键初始化
+
 	  printf("sys run\r\n");
-	  StartTimer(0,1000);
-	  StartTimer(1,2000);
-	  StartTimer(2,3000);
-	  StartAutoTimer(3,4000);
+
+	//   StartTimer(0,1000);
+	//   StartTimer(1,2000);
+	//   StartTimer(2,3000);
+	  StartAutoTimer(3,10);
 	 
 	while(1)
 	{				
@@ -51,11 +56,34 @@ int main(void)
 
 		if (CheckTimer(3))
 		{
-			printf("timer 3 arrived\r\n"); 
+		 //  printf("111\r\n");
+		    KeyScan();		
 		}
-		
-				
-				
+
+   		 KeyCode=KeyFifoGet();
+		 if(KeyCode != KEY_NONE)
+		 {
+			 
+
+
+		     switch(KeyCode)
+			 {
+				case  KEY1_DOWM: 	printf("K1  press\r\n");		break;
+				case  KEY1_UP:	 	printf("K1  lossen\r\n");		break;
+				case  KEY1_LONG:	printf("K1  long press\r\n");	break;
+
+				case  KEY2_DOWM:		printf("K2  press\r\n");				break;
+				case  KEY2_UP:	 		printf("K2  lossen\r\n");				break;
+				case  KEY2_LONG:		printf("K2  long press\r\n");			break;
+	
+				case  KEY3_DOWM:		break;
+				case  KEY3_UP:		  break;
+				case  KEY3_LONG:		break;
+			 }
+
+			 printf("KeyCode=%u\r\n",KeyCode);
+
+		 }										
 				
   }
 }

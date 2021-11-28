@@ -1,0 +1,23 @@
+--cpu Cortex-M3 --library_type=microlib --scatter "d:/GitHub_project/shiyan/soft_timer/USER/build/LED/USER.sct" --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols --info sizes --info totals --info unused --info veneers
+--list .\build\LED\USER.map
+.\build\LED\stm32f1xx_hal.o
+.\build\LED\stm32f1xx_hal_cortex.o
+.\build\LED\stm32f1xx_hal_dma.o
+.\build\LED\stm32f1xx_hal_gpio.o
+.\build\LED\stm32f1xx_hal_gpio_ex.o
+.\build\LED\stm32f1xx_hal_pwr.o
+.\build\LED\stm32f1xx_hal_rcc.o
+.\build\LED\stm32f1xx_hal_rcc_ex.o
+.\build\LED\stm32f1xx_hal_uart.o
+.\build\LED\stm32f1xx_hal_usart.o
+.\build\LED\key.o
+.\build\LED\led.o
+.\build\LED\timer.o
+.\build\LED\delay.o
+.\build\LED\sys.o
+.\build\LED\usart.o
+.\build\LED\main.o
+.\build\LED\stm32f1xx_hal_msp.o
+.\build\LED\stm32f1xx_it.o
+.\build\LED\system_stm32f1xx.o
+.\build\LED\startup_stm32f103xe.o -o .\build\LED\USER.axf

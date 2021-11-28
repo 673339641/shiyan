@@ -7,7 +7,8 @@
     "settings": {
         "files.associations": {
             ".eideignore": "ignore",
-            "timer.h": "c"
+            "timer.h": "c",
+            "key.h": "c"
         },
         "C_Cpp.default.intelliSenseMode": "gcc-arm",
         "files.autoGuessEncoding": true,

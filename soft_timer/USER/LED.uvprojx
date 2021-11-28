@@ -324,7 +324,7 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xE</Define>
               <Undefine></Undefine>
-              <IncludePath>..\CORE;..\USER;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HALLIB\STM32F1xx_HAL_Driver\Inc;..\HARDWARE\LED;..\HARDWARE\SOFTTIMER</IncludePath>
+              <IncludePath>..\CORE;..\USER;..\SYSTEM\delay;..\SYSTEM\sys;..\SYSTEM\usart;..\HALLIB\STM32F1xx_HAL_Driver\Inc;..\HARDWARE\LED;..\HARDWARE\SOFTTIMER;..\HARDWARE\KEY</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -521,6 +521,11 @@
               <FileName>timer.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\HARDWARE\SOFTTIMER\timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\HARDWARE\KEY\key.c</FilePath>
             </File>
           </Files>
         </Group>

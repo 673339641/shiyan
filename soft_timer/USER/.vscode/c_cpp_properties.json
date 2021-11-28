@@ -12,7 +12,7 @@
                 "${workspaceFolder}\\..\\HALLIB\\STM32F1xx_HAL_Driver\\Inc",
                 "${workspaceFolder}\\..\\HARDWARE\\LED",
                 "${workspaceFolder}\\..\\HARDWARE\\SOFTTIMER",
-                "${workspaceFolder}\\.cmsis\\include",
+                "${workspaceFolder}\\..\\HARDWARE\\KEY",
                 "${workspaceFolder}\\RTE\\_LED",
                 "${workspaceFolder}\\.eide\\deps",
                 "E:\\keilInstall\\ARM\\ARMCC\\include",
@@ -36,16 +36,17 @@
         {
             "name": "LED",
             "includePath": [
-                "d:\\My_interesting\\Soft_Timer\\CORE",
-                "d:\\My_interesting\\Soft_Timer\\USER",
-                "d:\\My_interesting\\Soft_Timer\\SYSTEM\\delay",
-                "d:\\My_interesting\\Soft_Timer\\SYSTEM\\sys",
-                "d:\\My_interesting\\Soft_Timer\\SYSTEM\\usart",
-                "d:\\My_interesting\\Soft_Timer\\HALLIB\\STM32F1xx_HAL_Driver\\Inc",
-                "d:\\My_interesting\\Soft_Timer\\HARDWARE\\LED",
-                "d:\\My_interesting\\Soft_Timer\\HARDWARE\\SOFTTIMER",
-                "d:\\My_interesting\\Soft_Timer\\HALLIB\\STM32F1xx_HAL_Driver\\Src",
-                "d:\\My_interesting\\Soft_Timer"
+                "d:\\GitHub_project\\shiyan\\soft_timer\\CORE",
+                "d:\\GitHub_project\\shiyan\\soft_timer\\USER",
+                "d:\\GitHub_project\\shiyan\\soft_timer\\SYSTEM\\delay",
+                "d:\\GitHub_project\\shiyan\\soft_timer\\SYSTEM\\sys",
+                "d:\\GitHub_project\\shiyan\\soft_timer\\SYSTEM\\usart",
+                "d:\\GitHub_project\\shiyan\\soft_timer\\HALLIB\\STM32F1xx_HAL_Driver\\Inc",
+                "d:\\GitHub_project\\shiyan\\soft_timer\\HARDWARE\\LED",
+                "d:\\GitHub_project\\shiyan\\soft_timer\\HARDWARE\\SOFTTIMER",
+                "d:\\GitHub_project\\shiyan\\soft_timer\\HARDWARE\\KEY",
+                "d:\\GitHub_project\\shiyan\\soft_timer\\HALLIB\\STM32F1xx_HAL_Driver\\Src",
+                "d:\\GitHub_project\\shiyan\\soft_timer"
             ],
             "defines": [
                 "USE_HAL_DRIVER",
