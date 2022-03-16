@@ -1,0 +1,6 @@
+r
+halt
+loadfile "d:\My_interesting\LUA_project\USER\build\KEY\USER.hex"
+r
+go
+exit

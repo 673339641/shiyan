@@ -1,0 +1,112 @@
+[2021-12-25 19:56:58]	[done]
+	build successfully !
+
+[2021-12-25 19:59:01]	[done]
+	build successfully !
+
+[2021-12-25 20:03:42]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0177c] in <1a6542a3afb24227bcc008420103c187>:0 
+---
+Error: L6218E: Undefined symbol exit (referred from loslib.o).
+Error: L6218E: Undefined symbol system (referred from loslib.o).
+Error: L6218E: Undefined symbol time (referred from loslib.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 3 error messages.
+
+
+[2021-12-25 20:11:42]	compilation failed at : "d:\My_interesting\LUA_project\USER\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x015d9] in <1a6542a3afb24227bcc008420103c187>:0 
+---
+".\main.c", line 17: Warning:  #177-D: variable "key"  was declared but never referenced
+  		u8 key;
+  		   ^
+".\main.c", line 66: Error:  #118: a void function may not return a value
+     return 0;
+            ^
+".\main.c", line 66: Warning:  #1461-D: function declared with "noreturn" does return
+     return 0;
+     ^
+.\main.c: 2 warnings, 1 error
+
+[2021-12-25 20:13:23]	compilation failed at : "d:\My_interesting\LUA_project\USER\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x015d9] in <1a6542a3afb24227bcc008420103c187>:0 
+---
+".\main.c", line 17: Warning:  #177-D: variable "key"  was declared but never referenced
+  		u8 key;
+  		   ^
+".\main.c", line 65: Error:  #118: a void function may not return a value
+     return 0;
+            ^
+".\main.c", line 65: Warning:  #1461-D: function declared with "noreturn" does return
+     return 0;
+     ^
+.\main.c: 2 warnings, 1 error
+
+[2021-12-25 20:14:03]	[done]
+	build successfully !
+
+[2021-12-25 20:22:17]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x0177c] in <1a6542a3afb24227bcc008420103c187>:0 
+---
+Error: L6218E: Undefined symbol usart_init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2021-12-25 20:23:42]	[done]
+	build successfully !
+
+[2021-12-25 23:05:23]	[done]
+	build successfully !
+
+[2021-12-26 12:22:33]	[done]
+	build successfully !
+
+[2021-12-26 12:25:00]	[done]
+	build successfully !
+
+[2021-12-26 12:29:28]	[done]
+	build successfully !
+
+[2021-12-26 12:29:44]	[done]
+	build successfully !
+
+[2021-12-26 12:58:14]	compilation failed at : "d:\My_interesting\LUA_project\LUA\lbaselib.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x000e4] in <1a6542a3afb24227bcc008420103c187>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x01653] in <1a6542a3afb24227bcc008420103c187>:0 
+---
+"d:\My_interesting\LUA_project\LUA\lbaselib.c", line 40: Error:  #167: argument of type "const char *" is incompatible with parameter of type "u8 *"
+          lua_writestring(s, l);
+          ^
+d:\My_interesting\LUA_project\LUA\lbaselib.c: 0 warnings, 1 error
+
+[2021-12-26 12:58:52]	compilation failed at : "d:\My_interesting\LUA_project\LUA\lbaselib.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x000e4] in <1a6542a3afb24227bcc008420103c187>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x01653] in <1a6542a3afb24227bcc008420103c187>:0 
+---
+"d:\My_interesting\LUA_project\LUA\lbaselib.c", line 40: Error:  #167: argument of type "const char *" is incompatible with parameter of type "u8 *"
+          lua_writestring(s, l);
+          ^
+d:\My_interesting\LUA_project\LUA\lbaselib.c: 0 warnings, 1 error
+
+[2021-12-26 12:59:49]	[done]
+	build successfully !
+
+[2021-12-26 13:03:58]	compilation failed at : "d:\My_interesting\LUA_project\LUA\lbaselib.c", exit code: 1
+  at unify_builder.Program.compileByMulThread (System.Int32 thrNum, unify_builder.CmdGenerator+CmdInfo[] cmds, System.Collections.Generic.List`1[T] errLogs) [0x000e4] in <1a6542a3afb24227bcc008420103c187>:0 
+  at unify_builder.Program.Main (System.String[] args) [0x01653] in <1a6542a3afb24227bcc008420103c187>:0 
+---
+"d:\My_interesting\LUA_project\LUA\lbaselib.c", line 43: Error:  #167: argument of type "const char *" is incompatible with parameter of type "u8 *"
+          Usart1Send(s, l);
+                     ^
+d:\My_interesting\LUA_project\LUA\lbaselib.c: 0 warnings, 1 error
+
+[2021-12-26 13:10:19]	[done]
+	build successfully !
+
+[2021-12-26 14:53:14]	[done]
+	build successfully !
+
+[2021-12-26 14:53:23]	[done]
+	build successfully !
+

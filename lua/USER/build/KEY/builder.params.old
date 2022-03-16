@@ -1,0 +1,131 @@
+{
+    "name": "USER",
+    "target": "KEY",
+    "toolchain": "AC5",
+    "showRepathOnLog": true,
+    "threadNum": 12,
+    "rootDir": "d:\\My_interesting\\LUA_project\\USER",
+    "dumpPath": ".eide\\log",
+    "outDir": "build\\KEY",
+    "builderDir": "c:\\Users\\TCY\\.vscode\\extensions\\cl.eide-2.16.0\\bin\\builder",
+    "ram": 65536,
+    "rom": 524288,
+    "incDirs": [
+        "..\\CORE",
+        ".",
+        "..\\SYSTEM\\delay",
+        "..\\SYSTEM\\sys",
+        "..\\SYSTEM\\usart",
+        "..\\HALLIB\\STM32F1xx_HAL_Driver\\Inc",
+        "..\\HARDWARE\\LED",
+        "..\\HARDWARE\\KEY",
+        "..\\HARDWARE\\SOFT_TIMER",
+        "..\\LUA",
+        "RTE\\_KEY",
+        ".eide\\deps"
+    ],
+    "libDirs": [],
+    "sourceList": [
+        "..\\CORE\\startup_stm32f103xe.s",
+        "..\\HALLIB\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal.c",
+        "..\\HALLIB\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_cortex.c",
+        "..\\HALLIB\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_dma.c",
+        "..\\HALLIB\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio.c",
+        "..\\HALLIB\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_gpio_ex.c",
+        "..\\HALLIB\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_pwr.c",
+        "..\\HALLIB\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc.c",
+        "..\\HALLIB\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_rcc_ex.c",
+        "..\\HALLIB\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_uart.c",
+        "..\\HALLIB\\STM32F1xx_HAL_Driver\\Src\\stm32f1xx_hal_usart.c",
+        "..\\HARDWARE\\KEY\\key.c",
+        "..\\HARDWARE\\LED\\led.c",
+        "..\\HARDWARE\\SOFT_TIMER\\soft_timer.c",
+        "..\\LUA\\lapi.c",
+        "..\\LUA\\lauxlib.c",
+        "..\\LUA\\lbaselib.c",
+        "..\\LUA\\lbitlib.c",
+        "..\\LUA\\lcode.c",
+        "..\\LUA\\lcorolib.c",
+        "..\\LUA\\lctype.c",
+        "..\\LUA\\ldblib.c",
+        "..\\LUA\\ldebug.c",
+        "..\\LUA\\ldo.c",
+        "..\\LUA\\ldump.c",
+        "..\\LUA\\lfunc.c",
+        "..\\LUA\\lgc.c",
+        "..\\LUA\\linit.c",
+        "..\\LUA\\liolib.c",
+        "..\\LUA\\llex.c",
+        "..\\LUA\\lmathlib.c",
+        "..\\LUA\\lmem.c",
+        "..\\LUA\\loadlib.c",
+        "..\\LUA\\lobject.c",
+        "..\\LUA\\lopcodes.c",
+        "..\\LUA\\loslib.c",
+        "..\\LUA\\lparser.c",
+        "..\\LUA\\lstate.c",
+        "..\\LUA\\lstring.c",
+        "..\\LUA\\lstrlib.c",
+        "..\\LUA\\ltable.c",
+        "..\\LUA\\ltablib.c",
+        "..\\LUA\\ltm.c",
+        "..\\LUA\\lundump.c",
+        "..\\LUA\\lutf8lib.c",
+        "..\\LUA\\lvm.c",
+        "..\\LUA\\lzio.c",
+        "..\\SYSTEM\\delay\\delay.c",
+        "..\\SYSTEM\\sys\\sys.c",
+        "..\\SYSTEM\\usart\\usart.c",
+        "main.c",
+        "stm32f1xx_hal_msp.c",
+        "stm32f1xx_it.c",
+        "system_stm32f1xx.c"
+    ],
+    "sourceParams": {},
+    "sourceParamsMtime": 1640433414833.0867,
+    "defines": [
+        "USE_HAL_DRIVER",
+        "STM32F103xE"
+    ],
+    "options": {
+        "version": 4,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [
+            {
+                "name": "axf to elf",
+                "command": "\"${BuilderFolder}\\mono.exe\" \"${BuilderFolder}\\axf2elf.exe\" -d \"E:\\keilInstall\\ARM\\ARMCC\" -b \"${outDir}\\USER.bin\" -i \"${outDir}\\USER.axf\" -o \"${outDir}\\USER.elf\" > \"${outDir}\\axf2elf.log\""
+            }
+        ],
+        "global": {
+            "use-microLIB": true,
+            "output-debug-info": "enable",
+            "microcontroller-cpu": "cortex-m3",
+            "microcontroller-fpu": "cortex-m3",
+            "microcontroller-float": "cortex-m3",
+            "target": "cortex-m3"
+        },
+        "c/cpp-compiler": {
+            "optimization": "level-0",
+            "one-elf-section-per-function": true,
+            "c99-mode": true,
+            "C_FLAGS": "--diag_suppress=1 --diag_suppress=1295",
+            "CXX_FLAGS": "--diag_suppress=1 --diag_suppress=1295"
+        },
+        "asm-compiler": {},
+        "linker": {
+            "output-format": "elf",
+            "link-scatter": [
+                "\"d:/My_interesting/LUA_project/USER/build/KEY/USER.sct\""
+            ]
+        }
+    },
+    "sha": {
+        "c/cpp-defines": "f6284b1fab7663e7e71588ba3cb298eb",
+        "beforeBuildTasks": "d751713988987e9331980363e24189ce",
+        "afterBuildTasks": "12a284096153de7e90a3738e49e9c614",
+        "global": "cab97363c56a7cd5c4d6d683dfcaa9f9",
+        "c/cpp-compiler": "ba2a532b8125b44a1517cc8aee242b21",
+        "asm-compiler": "99914b932bd37a50b983c5e7c90ae93b",
+        "linker": "552f53a578a22a6c4e8c0e3ed41ec442"
+    }
+}

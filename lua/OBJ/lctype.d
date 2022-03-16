@@ -1,0 +1,9 @@
+..\obj\lctype.o: ..\LUA\lctype.c
+..\obj\lctype.o: ..\LUA\lprefix.h
+..\obj\lctype.o: ..\LUA\lctype.h
+..\obj\lctype.o: ..\LUA\lua.h
+..\obj\lctype.o: E:\keilInstall\ARM\ARMCC\Bin\..\include\stdarg.h
+..\obj\lctype.o: E:\keilInstall\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\lctype.o: ..\LUA\luaconf.h
+..\obj\lctype.o: E:\keilInstall\ARM\ARMCC\Bin\..\include\limits.h
+..\obj\lctype.o: ..\LUA\llimits.h

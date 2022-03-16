@@ -1,0 +1,16 @@
+..\obj\lfunc.o: ..\LUA\lfunc.c
+..\obj\lfunc.o: ..\LUA\lprefix.h
+..\obj\lfunc.o: E:\keilInstall\ARM\ARMCC\Bin\..\include\stddef.h
+..\obj\lfunc.o: ..\LUA\lua.h
+..\obj\lfunc.o: E:\keilInstall\ARM\ARMCC\Bin\..\include\stdarg.h
+..\obj\lfunc.o: ..\LUA\luaconf.h
+..\obj\lfunc.o: E:\keilInstall\ARM\ARMCC\Bin\..\include\limits.h
+..\obj\lfunc.o: ..\LUA\lfunc.h
+..\obj\lfunc.o: ..\LUA\lobject.h
+..\obj\lfunc.o: ..\LUA\llimits.h
+..\obj\lfunc.o: ..\LUA\lgc.h
+..\obj\lfunc.o: ..\LUA\lstate.h
+..\obj\lfunc.o: ..\LUA\ltm.h
+..\obj\lfunc.o: ..\LUA\lzio.h
+..\obj\lfunc.o: ..\LUA\lmem.h
+..\obj\lfunc.o: E:\keilInstall\ARM\ARMCC\Bin\..\include\signal.h

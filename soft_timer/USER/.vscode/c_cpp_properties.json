@@ -2,36 +2,7 @@
     "configurations": [
         {
             "name": "win32",
-            "includePath": [
-                "${default}",
-                "${workspaceFolder}\\..\\CORE",
-                "${workspaceFolder}\\.",
-                "${workspaceFolder}\\..\\SYSTEM\\delay",
-                "${workspaceFolder}\\..\\SYSTEM\\sys",
-                "${workspaceFolder}\\..\\SYSTEM\\usart",
-                "${workspaceFolder}\\..\\HALLIB\\STM32F1xx_HAL_Driver\\Inc",
-                "${workspaceFolder}\\..\\HARDWARE\\LED",
-                "${workspaceFolder}\\..\\HARDWARE\\SOFTTIMER",
-                "${workspaceFolder}\\..\\HARDWARE\\KEY",
-                "${workspaceFolder}\\RTE\\_LED",
-                "${workspaceFolder}\\.eide\\deps",
-                "E:\\keilInstall\\ARM\\ARMCC\\include",
-                "E:\\keilInstall\\ARM\\ARMCC\\include\\rw"
-            ],
-            "defines": [
-                "${default}",
-                "__VSCODE_CPPTOOL",
-                "USE_HAL_DRIVER",
-                "STM32F103xE"
-            ],
-            "intelliSenseMode": "${default}",
-            "browse": {
-                "limitSymbolsToIncludedHeaders": true,
-                "databaseFilename": "${default}"
-            },
-            "forcedInclude": [
-                "c:\\Users\\TCY\\.vscode\\extensions\\cl.eide-2.14.0\\bin\\include\\internal_headers\\armcc_intr.h"
-            ]
+            "configurationProvider": "cl.eide"
         },
         {
             "name": "LED",
