@@ -28,7 +28,7 @@ int main(void)
 	  
 	  uart_init(115200);
 	  KeyInit();  	 //按键初始化
-
+    HAL_Delay(1000);
 	  printf("sys run\r\n");
 
 	//   StartTimer(0,1000);
